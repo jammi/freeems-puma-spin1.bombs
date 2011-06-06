@@ -2,7 +2,7 @@
 
 ## Instructions:
 
-Make a clone of this repository into the dbs directory of [FreeBOBMS](https://github.com/jammi/FreeBOMBS).
+Make a clone of this repository into the dbs directory of [FreeBOMBS](https://github.com/jammi/FreeBOMBS).
 
 
 
