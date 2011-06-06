@@ -1,0 +1,9 @@
+digikey:
+  title: DigiKey
+  homepage: http://www.digikey.com/
+  currency: USD
+## this entry is not defined, as no supply information for it is defined in the components yet
+# farnell-fi:
+#   title: Farnell Finland
+#   homepage: http://fi.farnell.com/
+#   currency: EUR
