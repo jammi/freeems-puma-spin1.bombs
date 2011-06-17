@@ -7,7 +7,6 @@ description: |
 components:
   - 'MCR10EZPF1001'
   - 'RSF200JB-1R0'
-  #- '52000001009' # unused
   - [ 11, 'RMCF0805FT10K0' ]
   - [ 2, 'RMCF0805JT10M0' ]
   - 'RMCF0805JT22K0'
@@ -22,6 +21,7 @@ components:
   - [ 4, '08055C333KAZ2A' ]
   - [ 2, 'RMCF0805JT4K70' ]
   - [ 2, 'LH R974-LP-1-0-20-R18' ]
+  - [ 2, 'MCR10EZPF3301']
   - [ 8, 'CC0805KRX7R9BB152' ]
   - 'NX3225SA 16MHZ AT-W'
   - '500R15W332KV4T'
@@ -35,6 +35,7 @@ components:
   - 'LM2937IMP-5.0/NOPB'
   - 'MC9S12XDP512MAL'
   - 'AK670/2-1-R'
+  - [ 2, MCR10EZPF2201 ]
 section_order:
   - RECOMMENDED
   - USB-CONN1
@@ -70,7 +71,10 @@ sections:
       - [ 2, 'RSF200JB-1R0' ]
       - [ 4, 'GRM21BR71H104KA01L' ]
       - [ 4, 'RMCF0805JT1K60' ]
-      - 74HC86DR2G
+      - 74HCT86D
+      - [ 4, 'MBR0520L' ]
+      - MCR10EZPF3301
+
   USB-CONN1:
     title: USB connector kit A to A
     description: |
@@ -126,7 +130,7 @@ sections:
     min: 0
     max: 8
     components:
-      - 'VNP20N07'
+      - 'IPS1021PBF'
   INJ-L:
     title: Low-Z injector circuit configuration
     description: |
@@ -185,7 +189,9 @@ sections:
       - 'RMCF0805FT10K0'
       - 'RMCF0805JT1K60'
       - 'LH R974-LP-1-0-20-R18'
-      - 'VNP20N07'
+      - 'MCR10EZPF3301'
+      - 'MCR10EZPF3301'
+      - 'IPS1021PBF'
   RPM:
     title: Tach input circuits
     description: |
@@ -279,7 +285,7 @@ sections:
       - 'RMCF0805JT1K60'
       - 'RMCF0805JT100K'
       - 'CC0805JRNP09BN100'
-      - 'VNP20N07'
+      - 'IPS1021PBF'
   O2:
     title: Lambda sensor input circuits
     description: |
@@ -326,12 +332,14 @@ sections:
   STP:
     title: Stepper driver
     description: |
-      ## NOTE: Includes no parts!
       Untested and no firmware support.
     checked: false
     value: 0
     min: 0
     max: 1
+    components:
+      - [ 2, 'CRCW12101R00JNEA' ]  #NOTE: lacks the non stocked driver IC
+
   ANP:
     title: Analog protection circuits
     description: |
