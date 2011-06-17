@@ -190,7 +190,6 @@ sections:
       - 'RMCF0805JT1K60'
       - 'LH R974-LP-1-0-20-R18'
       - 'MCR10EZPF3301'
-      - 'MCR10EZPF3301'
       - 'IPS1021PBF'
   RPM:
     title: Tach input circuits
